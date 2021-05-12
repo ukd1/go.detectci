@@ -38,7 +38,6 @@ var ciIndicatiors = map[string]ciIndicator{
 	"GERRIT_PROJECT":                     ciIndicator{name: "gerrit"},
 	"GITLAB_CI":                          ciIndicator{name: "gitlab"},
 	"CIRCLECI":                           ciIndicator{name: "circle-ci"},
-	"TEAMCITY_VERSION":                   ciIndicator{name: "teamcity"},
 	"SEMAPHORE":                          ciIndicator{name: "semaphore"},
 	"DRONE":                              ciIndicator{name: "drone"},
 	"GITHUB_ACTION":                      ciIndicator{name: "github-actions"},
@@ -63,12 +62,16 @@ var ciIndicatiors = map[string]ciIndicator{
 	"STRIDER":                            ciIndicator{name: "strider"},
 	"TASKCLUSTER_ROOT_URL":               ciIndicator{name: "taskcluster"},
 	"HUDSON_URL":                         ciIndicator{name: "hudson"},
-	"NOW_BUILDER":                        ciIndicator{name: "now"},
+	"NOW_BUILDER":                        ciIndicator{name: "vercel"},
 	"MAGNUM":                             ciIndicator{name: "magnum"},
 	"NEVERCODE":                          ciIndicator{name: "nevercode"},
 	"RENDER":                             ciIndicator{name: "render"},
 	"SAIL_CI":                            ciIndicator{name: "sail"},
+	"SAILCI":                             ciIndicator{name: "sail"},
 	"SHIPPABLE":                          ciIndicator{name: "shippable"},
+	"TEAMCITY_VERSION":                   ciIndicator{name: "teamcity"},
+	"CODESHIP":                           ciIndicator{name: "codeship"},
+	"APPCENTER_BUILD_ID":                 ciIndicator{name: "visual-studio-app-center"},
 }
 
 func IsCI() bool {
