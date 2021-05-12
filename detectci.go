@@ -68,11 +68,11 @@ var ciIndicatiors = map[string]ciIndicator{
 	"RENDER":                             ciIndicator{name: "render"},
 	"SAIL_CI":                            ciIndicator{name: "sail"},
 	// Added some more from https://github.com/watson/ci-info/blob/master/vendors.json
-	"SAILCI":                             ciIndicator{name: "sail"},
-	"SHIPPABLE":                          ciIndicator{name: "shippable"},
-	"TEAMCITY_VERSION":                   ciIndicator{name: "teamcity"},
-	"CODESHIP":                           ciIndicator{name: "codeship"},
-	"APPCENTER_BUILD_ID":                 ciIndicator{name: "visual-studio-app-center"},
+	"SAILCI":             ciIndicator{name: "sail"},
+	"SHIPPABLE":          ciIndicator{name: "shippable"},
+	"TEAMCITY_VERSION":   ciIndicator{name: "teamcity"},
+	"CODESHIP":           ciIndicator{name: "codeship"},
+	"APPCENTER_BUILD_ID": ciIndicator{name: "visual-studio-app-center"},
 }
 
 func IsCI() bool {
