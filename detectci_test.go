@@ -60,7 +60,7 @@ func TestWhichCI(t *testing.T) {
 	// detects generic CI
 	os.Setenv("CI", "1")
 	found, ci_name = WhichCI()
-	if  !found {
+	if !found {
 		t.Error("Did not detect CI")
 	} else {
 		if ci_name != "unknown" {
@@ -69,10 +69,10 @@ func TestWhichCI(t *testing.T) {
 	}
 	os.Unsetenv("CI")
 
-	// detects github actions 
+	// detects github actions
 	os.Setenv("GITHUB_ACTION", "1")
-	found, ci_name = WhichCI();
-	if  !found {
+	found, ci_name = WhichCI()
+	if !found {
 		t.Error("Did not detect CI")
 	} else {
 		if ci_name != "github-actions" {
@@ -83,8 +83,8 @@ func TestWhichCI(t *testing.T) {
 	// detects github actions before an unknown CI
 	os.Setenv("CI", "1")
 	os.Setenv("GITHUB_ACTION", "1")
-	found, ci_name = WhichCI();
-	if  !found {
+	found, ci_name = WhichCI()
+	if !found {
 		t.Error("Did not detect CI")
 	} else {
 		if ci_name != "github-actions" {
