@@ -38,6 +38,7 @@ var ciIndicatiors = map[string]ciIndicator{
 	"GERRIT_PROJECT":                     ciIndicator{name: "gerrit"},
 	"GITLAB_CI":                          ciIndicator{name: "gitlab"},
 	"CIRCLECI":                           ciIndicator{name: "circle-ci"},
+	"TEAMCITY_VERSION":                   ciIndicator{name: "teamcity"},
 	"SEMAPHORE":                          ciIndicator{name: "semaphore"},
 	"DRONE":                              ciIndicator{name: "drone"},
 	"GITHUB_ACTION":                      ciIndicator{name: "github-actions"},
