@@ -67,6 +67,7 @@ var ciIndicatiors = map[string]ciIndicator{
 	"NEVERCODE":                          ciIndicator{name: "nevercode"},
 	"RENDER":                             ciIndicator{name: "render"},
 	"SAIL_CI":                            ciIndicator{name: "sail"},
+	// Added some more from https://github.com/watson/ci-info/blob/master/vendors.json
 	"SAILCI":                             ciIndicator{name: "sail"},
 	"SHIPPABLE":                          ciIndicator{name: "shippable"},
 	"TEAMCITY_VERSION":                   ciIndicator{name: "teamcity"},
