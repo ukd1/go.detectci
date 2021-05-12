@@ -1,0 +1,2 @@
+# go-detectCi
+go.detectci
