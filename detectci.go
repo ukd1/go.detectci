@@ -105,7 +105,10 @@ func WhichCI() (bool, string) {
 	}
 
 	if !found_ci {
-		if _, ok := os.LookupEnv("CI"); ok {
+		if val, ok := os.LookupEnv("CI"); ok {
+			if val == "woodpecker" {
+				return true, val
+			}
 			return true, "unknown"
 		} else {
 			return false, ""
