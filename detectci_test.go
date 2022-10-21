@@ -69,6 +69,18 @@ func TestWhichCI(t *testing.T) {
 	}
 	os.Unsetenv("CI")
 
+	// detect woodpecker
+	os.Setenv("CI", "woodpecker")
+	found, ci_name = WhichCI()
+	if !found {
+		t.Error("Did not detect CI")
+	} else {
+		if ci_name != "woodpecker" {
+			t.Errorf("Should have found 'woodpecker' CI, instead %v", ci_name)
+		}
+	}
+	os.Unsetenv("CI")
+
 	// detects github actions
 	os.Setenv("GITHUB_ACTION", "1")
 	found, ci_name = WhichCI()
